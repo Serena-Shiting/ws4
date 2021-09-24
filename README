@@ -1,0 +1,8 @@
+Yes, the means and variances of helpfulness values is significantly different between different products or customers, because different products and users have different requirements for product evaluation.
+CUSTOMERS 	50122160		49693975		53096008 
+Mean		6.12			4.97			3.99
+Variance	110.72		59.22			48.73
+
+PRODUCTS	0439139597		1844161560		0975599518
+Mean		1.51			20.70			13.99
+Variance	48.42			828.81		185.65
