@@ -1,0 +1,1000 @@
+  931  head CUSTOMERS/c1.txt 
+  932  clear
+  933  ls
+  934  grep 50122160 ../amazon_reviews_us_Books_v1_02.tsv>CUSTOMERS/50122160.txt
+  935  head -n 2 CUSTOMERS/50122160.txt 
+  936  ls
+  937  clear
+  938  cut -d "	" -f 9 CUSTOMERS/50122160.txt > 50122160_score.txt
+  939  cut -d "	" -f 9 CUSTOMERS/50122160.txt > CUSTOMERS/50122160_score.txt
+  940  ls
+  941  rm 50122160_score.txt
+  942  head CUSTOMERS/50122160_score.txt
+  943  count=0; total=0; for i in `CUSTOMERS/50122160_score.txt`; do total=$(echo $total+$i | bc ); ((count++)); done; echo $(scale=2; $total / $count | bc)
+  944  cd CUSTOMERS/
+  945  count=0; total=0; for i in `50122160_score.txt`; do total=$(echo $total+$i | bc ); ((count++)); done; echo $(scale=2; $total / $count | bc)
+  946  cd ..
+  947  count=0; total=0; for i in `cat CUSTOMERS/50122160_score.txt`; do total=$(echo $total+$i | bc ); ((count++)); done; echo $(scale=2; $total / $count | bc)
+  948  count=0; total=0; for i in `cat CUSTOMERS/50122160_score.txt`; do total=$(echo $total+$i | bc ); ((count++)); echo $(scale=2; $total / $count | bc) done; 
+  949  count=0; total=0; for i in `cat CUSTOMERS/50122160_score.txt`; do total=$(echo $total+$i | bc ); ((count++));done;
+  950  echo $(scale=2; $total / $count | bc) 
+  951  echo $total 
+  952  echo $count 
+  953  echo "scale=2; $total / $count"|bc 
+  954  count=0; total=0; for i in `cat CUSTOMERS/50122160_score.txt`; do total=$(echo $total+($I-6.12)^2 | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  955  echo $count 
+  956  echo $total 
+  957  count=0; total=0; for i in `cat CUSTOMERS/50122160_score.txt`; do total=$(echo $total+($i-6.12)^2 | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  958  grep 49693975 ../amazon_reviews_us_Books_v1_02.tsv>CUSTOMERS/49693975.txt
+  959  cut -d "   " -f 9 CUSTOMERS/49693975.txt > CUSTOMERS/49693975_score.txt
+  960  cut -d "	" -f 9 CUSTOMERS/49693975.txt > CUSTOMERS/49693975_score.txt
+  961  count=0; total=0; for i in `cat CUSTOMERS/49693975_score.txt`; do total=$(echo $total+$i | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  962  count=0; total=0; for i in `cat CUSTOMERS/49693975_score.txt `; do total=$(echo $total+($i-4.97)^2 | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  963  53096008 grep 53096008 ../amazon_reviews_us_Books_v1_02.tsv>CUSTOMERS/53096008.txt
+  964  grep 45041039 ../amazon_reviews_us_Books_v1_02.tsv>CUSTOMERS/45041039.txt
+  965  cut -d "   " -f 9 CUSTOMERS/45041039.txt > CUSTOMERS/45041039_score.txt
+  966  cut -d " " -f 9 CUSTOMERS/45041039.txt > CUSTOMERS/45041039_score.txt
+  967  count=0; total=0; for i in `cat CUSTOMERS/53096008_score.txt `; do total=$(echo $total+$i | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  968  count=0; total=0; for i in `cat CUSTOMERS/45041039_score.txt `; do total=$(echo $total+$i | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  969  cut -d "	" -f 9 CUSTOMERS/45041039.txt > CUSTOMERS/45041039_score.txt
+  970  count=0; total=0; for i in `cat CUSTOMERS/45041039_score.txt `; do total=$(echo $total+$i | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  971  count=0; total=0; for i in `cat CUSTOMERS/45041039_score.txt `; do total=$(echo $total+($i-3.99)^2 | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  972  grep 0439139597 ../amazon_reviews_us_Books_v1_02.tsv> PRODUCTS/50122160.txt
+  973  cut -d "   " -f 9 PRODUCTS/0439139597.txt > PRODUCTS/0439139597
+  974  cut -d "	" -f 9 PRODUCTS/0439139597.txt > PRODUCTS/0439139597
+  975  grep 0439139597 ../amazon_reviews_us_Books_v1_02.tsv> PRODUCTS/0439139597.txt
+  976  cut -d "   " -f 9 PRODUCTS/0439139597.txt > PRODUCTS/0439139597_score.txt
+  977  cut -d "	" -f 9 PRODUCTS/0439139597.txt > PRODUCTS/0439139597_score.txt
+  978  count=0; total=0; for i in `cat PRODUCTS/0439139597_score.txt `; do total=$(echo $total+$i | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  979  count=0; total=0; for i in `cat PRODUCTS/0439139597_score.txt `; do total=$(echo $total+($i-1.51)^2 | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  980  grep 1844161560 ../amazon_reviews_us_Books_v1_02.tsv> PRODUCTS/1844161560.txt
+  981  cut -d "	" -f 9 PRODUCTS/0439139597.txt > PRODUCTS/1844161560_score.txt
+  982  count=0; total=0; for i in `cat PRODUCTS/1844161560_score.txt `; do total=$(echo $total+$i | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  983  count=0; total=0; for i in `cat PRODUCTS/1844161560_score.txt `; do total=$(echo $total+($i-1.51)^2 | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  984  grep 0975599518 ../amazon_reviews_us_Books_v1_02.tsv> PRODUCTS/0975599518.txt
+  985  cut -d "	" -f 9 PRODUCTS/0439139597.txt > PRODUCTS/0975599518_score.txt
+  986  count=0; total=0; for i in `cat PRODUCTS/0975599518_score.txt `; do total=$(echo $total+$i | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  987  count=0; total=0; for i in `cat PRODUCTS/0975599518_score.txt `; do total=$(echo $total+($i-1.51)^2 | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  988  mkdir README
+  989  cd ..
+  990  ls
+  991  cd ws4
+  992  cut -d "	" -f 9 PRODUCTS/0975599518.txt > PRODUCTS/0975599518_score.txt
+  993  count=0; total=0; for i in `cat PRODUCTS/0975599518_score.txt `; do total=$(echo $total+$i | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  994  count=0; total=0; for i in `cat PRODUCTS/0975599518_score.txt `; do total=$(echo $total+($i-13.99)^2 | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  995  count=0; total=0; for i in `cat PRODUCTS/1844161560_score.txt `; do total=$(echo $total+($i-4.97)^2 | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  996  cut -d "	" -f 9 PRODUCTS/1844161560.txt > PRODUCTS/1844161560_score.txt
+  997  count=0; total=0; for i in `cat PRODUCTS/1844161560_score.txt `; do total=$(echo $total+$i | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  998  count=0; total=0; for i in `cat PRODUCTS/1844161560_score.txt `; do total=$(echo $total+($i-20.70)^2 | bc ); ((count++));done; echo "scale=2; $total / $count"|bc 
+  999  ls
+ 1000  vi README/
+ 1001  nano
+ 1002  nano README/
+ 1003  ls
+ 1004  rm README.txt README
+ 1005  mv README.txt README
+ 1006  nano README/
+ 1007  ls
+ 1008  head readme.txt 
+ 1009  mv readme.txt README/
+ 1010  ls
+ 1011  nano R
+ 1012  head README/
+ 1013  nano README/
+ 1014  Yes, the means and variances of helpfulness values is significantly different between different products or customers, because different products and users have different requirements for product evaluation. > README
+ 1015  touch README
+ 1016  Yes, the means and variances of helpfulness values is significantly different between different products or customers, because different products and users have different requirements for product evaluation. > README
+ 1017  rm README/
+ 1018  rmdir README/
+ 1019  rm -rf README/
+ 1020  Yes, the means and variances of helpfulness values is significantly different between different products or customers, because different products and users have different requirements for product evaluation. > README
+ 1021  ls
+ 1022  nano README 
+ 1023  head README/
+ 1024  head README
+ 1025  ls
+ 1026  git init
+ 1027  nano README 
+ 1028  ls
+ 1029  rm 3_c_s.txt 3_customer.txt 3_p_s.txt  
+ 1030  rm 3_product.txt 
+ 1031  ls
+ 1032  rm CUSTOMERS  
+ 1033  head result_c.txt 
+ 1034  head result_p.txt 
+ 1035  head result_h.txt 
+ 1036  ls
+ 1037  head product_id.txt 
+ 1038  head -n 20 result_p.txt 
+ 1039  vi result_p.txt 
+ 1040  clear
+ 1041  ls
+ 1042  rm -rf ws4
+ 1043  ls
+ 1044  rm -rf CUSTOMERS PRODUCTS
+ 1045  ls
+ 1046  script ws4.txt
+ 1047  cd ws4
+ 1048  cmds.log" with "history > cmds.log
+ 1049  ls
+ 1050  cd ..
+ 1051  ls
+ 1052  mv ws4.txt ws4
+ 1053  cd ws4
+ 1054  ls
+ 1055  git add .
+ 1056  git commit -m "first commit"
+ 1057  git remote add origin https://github.com/Serena-Shiting/ws4.git
+ 1058  git branch -M main
+ 1059  git push -u origin main
+ 1060  git init
+ 1061  git state
+ 1062  git stage
+ 1063  git add README cmds.log ws4.txt 
+ 1064  git stage
+ 1065  git add README cmds.log ws4.txt 
+ 1066  git stage
+ 1067  history
+ 1068  rm -rf .git
+ 1069  git remote add origin https://github.com/Serena-Shiting/ws4.git
+ 1070  ls -la
+ 1071  ls -la ../.git
+ 1072  mv  ../.git ../.git.BAK
+ 1073  ls -la ../.git
+ 1074  git remote add origin https://github.com/Serena-Shiting/ws4.git
+ 1075  git init
+ 1076  git remote add origin https://github.com/Serena-Shiting/ws4.git
+ 1077  git add .
+ 1078  git add README cmds.log ws4.txt 
+ 1079  git branch -M master
+ 1080  git branch
+ 1081  git commit -m "first commit"
+ 1082  git branch -M master
+ 1083  git push oringin master
+ 1084  git push origin master
+ 1085  rm -rf .goit
+ 1086  rm -rf .git
+ 1087  git init
+ 1088  git add README cmds.log ws4.txt 
+ 1089  git commit -m"first comment"
+ 1090  git branch -M master
+ 1091  git push oringin master
+ 1092  git push origin master
+ 1093  git remote add origin https://github.com/Serena-Shiting/ws4.git
+ 1094  git branch -M master
+ 1095  git push -u origin master
+ 1096  git branch
+ 1097  git branch -M main
+ 1098  git branch
+ 1099  tmux
+ 1100  tmux ls
+ 1101  tmux
+ 1102  tmux ls
+ 1103  tmux attach-session -t 0
+ 1104  wget https://nsa-codebreaker.org/files/task2/logins.json?1632679185
+ 1105  curl -o https://nsa-codebreaker.org/files/task2/logins.json?1632679185
+ 1106  tmux
+ 1107  ls
+ 1108  rm -r amazon_file/
+ 1109  ls
+ 1110  rm amazon_reviews_us_Books_v1_02.tsv.gz
+ 1111  ls
+ 1112  rm Nverfied.txt Yverfied.txt unverified.txt verified.txt 
+ 1113  ls
+ 1114  head n-1 amazon_reviews_us_Books_v1_02.tsv 
+ 1115  head -n 1 amazon_reviews_us_Books_v1_02.tsv
+ 1116  awk -F"\t" '{print $2}' amazon_reviews_us_Books_v1_02.tsv > review.txt
+ 1117  awk -F"\t" '{print $2}' amazon_reviews_us_Books_v1_02.tsv > customersid.txt
+ 1118  head n -10 customersid.txt 
+ 1119  head -n 10 customersid.txt 
+ 1120  cat customersid.txt | unique > unique_cust.txt
+ 1121  cat customersid.txt | uniq > unique_cust.txt
+ 1122  wc unique_cust.txt 
+ 1123  man wc
+ 1124  mkdir a2
+ 1125  cd a2
+ 1126  awk -F"\t" '{print $6}’ amazon_reviews_us_Books_v1_02.tsv > product_titles.txt
+ 1127  awk -F"\t" '{print $6}' amazon_reviews_us_Books_v1_02.tsv > product_titles.txt
+ 1128  awk -F"\t" '{print $6}' ~/amazon_reviews_us_Books_v1_02.tsv > product_titles.txt
+ 1129  head -n 10 product_titles.txt 
+ 1130  wc product_titles.txt 
+ 1131  cat product_titles.txt | uniq > unique_product_titles.txt
+ 1132  wc unique_product_titles.txt 
+ 1133  cd ..
+ 1134  ls
+ 1135  wc product_id.txt 
+ 1136  wc result_p.txt 
+ 1137  history
+ 1138  q
+ 1139  ls
+ 1140  cd a2
+ 1141  ls
+ 1142  cd ..
+ 1143  cp unique_cust.txt a2
+ 1144  cd a2
+ 1145  ls
+ 1146  head -n 100 unique_cust.txt 
+ 1147  head -n 101 unique_cust.txt > 100cust.txt
+ 1148  tail -n 100 100cust.txt >100cust.txt 
+ 1149  vi 100cust.txt 
+ 1150  cat 100cust.txt 
+ 1151  head -n 100 unique_cust.txt 
+ 1152  head -n 100 unique_cust.txt > 100cust.txt 
+ 1153  head 100cust.txt 
+ 1154  head -n 101 unique_cust.txt > 100cust.txt 
+ 1155  head 100cust.txt 
+ 1156  tail 100cust.txt 
+ 1157  tail -n 100 100cust.txt > 100cust.txt 
+ 1158  cat 100cust.txt 
+ 1159  head 100cust.txt 
+ 1160  head -n 101 unique_cust.txt > 100cust.txt 
+ 1161  head -n 101 unique_cust.txt > 101cust.txt 
+ 1162  tail -n 100 101cust.txt > 100cust.txt 
+ 1163  cat 100cust.txt 
+ 1164  wc 100cust.txt 
+ 1165  man grep
+ 1166  cd ..
+ 1167  ls
+ 1168  head -n 10 result_c.txt .txt
+ 1169  man sort
+ 1170  cd a2
+ 1171  head -n 101 result_c.txt > 101cust.txt 
+ 1172  head -n 101 ~/result_c.txt > 101cust.txt 
+ 1173  tail -n 100 101cust.txt > 100cust.txt 
+ 1174  head 100cust.txt 
+ 1175  man awk
+ 1176  awk -F" " '{print $2}' 100cust.txt > 100cid
+ 1177  head 100cid
+ 1178  awk -F" " '{print $2}' 100cust.txt > 100cid.txt
+ 1179  rm 100cid
+ 1180  awk -F"\t" '{print $2,$8,$9}' amazon_reviews_us_Books_v1_02.tsv > customer_id_helpfulness_ review.txt
+ 1181  awk -F"\t" '{print $2,$8,$9}' ~/amazon_reviews_us_Books_v1_02.tsv > customer_id_helpfulness_ review.txt
+ 1182  awk -F"\t" '{print $2,$8,$9}' ~/amazon_reviews_us_Books_v1_02.tsv > customer_id_helpfulness_review.txt
+ 1183  head customer_id_helpfulness_review.txt
+ 1184  mkdir CUSTOMERS
+ 1185  cd CUSTOMERS
+ 1186  for i in `cat ~/a2/100cust.txt `; do touch $i.txt; grep -e ~/a2/100cust.txt ~/a2/customer_id_helpfulness_review.txt > $i.txt; done
+ 1187  ls
+ 1188  nano ~/a2/100cust.txt 
+ 1189  nano 12076615.txt
+ 1190  ls
+ 1191  nano 51744771.txt
+ 1192  cat ~/100cust.txt 
+ 1193  cat ~/a2/100cust.txt 
+ 1194  cd ..
+ 1195  rm -r CUSTOMERS
+ 1196  ls
+ 1197  mkdir CUSTOMERS
+ 1198  ls
+ 1199  head 100cid.txt 
+ 1200  ls
+ 1201  for i in `cat ~/a2/100cid.txt`; do touch $i.txt; grep -e ~/a2/100cid.txt ~/a2/customer_id_helpfulness_review.txt > $i.txt; done
+ 1202  ls
+ 1203  cd CUSTOMERS/
+ 1204  for i in `cat ~/a2/100cid.txt`; do touch $i.txt; grep -e ~/a2/100cid.txt ~/a2/customer_id_helpfulness_review.txt > $i.txt; done
+ 1205  ls
+ 1206  cat 51706075.txt
+ 1207  for i in `cat ~/a2/100cid.txt`; do touch $i.txt; grep i  ~/a2/customer_id_helpfulness_review.txt > $i.txt; done
+ 1208  ls
+ 1209  cat 51706075.txt
+ 1210  cat 52254603.txt
+ 1211  for i in `cat ~/a2/100cid.txt`; do touch $i.txt; grep $i ~/a2/customer_id_helpfulness_review.txt > $i.txt; done
+ 1212  cat 52254603.txt
+ 1213  for i in `cat ~/a2/100cid.txt`; do touch $i.txt; grep -e $i ~/a2/customer_id_helpfulness_review.txt > $i.txt; done
+ 1214  cat 52254603.txt
+ 1215  for i in `cat ~/a2/100cid.txt`; do touch $i.txt; grep -e i ~/a2/customer_id_helpfulness_review.txt > $i.txt; done
+ 1216  cat 52254603.txt
+ 1217  cd ..
+ 1218  ls
+ 1219  head -n 10 customer_id_helpfulness_review.txt 
+ 1220  rm customer_id_helpfulness_
+ 1221  LS
+ 1222  ls
+ 1223  cd CUSTOMERS/
+ 1224  ls
+ 1225  for i in `cat ~/a2/100cid.txt`; do touch $i.txt; grep $i | cut -f 2,3 ~/a2/customer_id_helpfulness_review.txt > $i.txt; done
+ 1226  for i in `cat ~/a2/100cid.txt`; do touch $i.txt; grep $i ~/a2/customer_id_helpfulness_review.txt | cut -f 2,3 > $i.txt; done
+ 1227  cat 52254603.txt
+ 1228  cd ..
+ 1229  rm -r CUSTOMERS/
+ 1230  mkdir CUSTOMERS
+ 1231  cd CUSTOMERS/
+ 1232  ls
+ 1233  for i in `cat ~/a2/100cid.txt`; do grep $i ~/a2/customer_id_helpfulness_review.txt | cut -f 2,3 > $i.txt; done
+ 1234  ls
+ 1235  cat 52254603.txt
+ 1236  cat 51324308.txt
+ 1237  for i in `cat ~/a2/100cid.txt`; do grep $i ~/a2/customer_id_helpfulness_review.txt | cut -f 2,3 > $i.txt; done
+ 1238  ls
+ 1239  rm 33993847.txt  52543421.txt  53094545.txt
+ 1240  45041039.txt  52549534.txt  53095241.txt
+ 1241  48656978.txt  52558609.txt  53096008.txt
+ 1242  49693975.txt  52574579.txt  53096149.txt
+ 1243  ls
+ 1244  rm 45041039.txt  51209967.txt  51925715.txt  52480140.txt  52653706.txt  52906860.txt  53077677.txt  53095241.txt 48656978.txt  51324308.txt  52008531.txt  52489871.txt  52712162.txt  52912922.txt  53078177.txt  53096008.txt
+ 1245  ls
+ 1246  rm 49693975.txt  51388692.txt  52070241.txt  52494925.txt  52721795.txt  52921971.txt  53083067.txt  53096149.txt 50122160.txt  51403161.txt  52106113.txt  52506725.txt  52768337.txt  53041222.txt  53085673.txt
+ 1247  ls
+ 1248  rm 50732546.txt  51670735.txt  52432257.txt  52640843.txt  53041254.txt  53091579.txt 50919803.txt  51706075.txt  52447932.txt  52820994.txt  53053358.txt  53092570.txt 51126995.txt  51744771.txt  52549534.txt  52868812.txt  53053892.txt  53093476.txt
+ 1249  ls
+ 1250  rm 51204643.txt  52254603.txt  52872563.txt  53087372.txt 51627410.txt  52558609.txt  52894384.txt 52173832.txt  52574579.txt  53058003.txt
+ 1251  ls
+ 1252  for i in $(cat ~/a2/100cid.txt); do grep "$i" ~/a2/customer_id_helpfulness_review.txt | cut -f 2,3 > ~/a2/CUSTOMER/$i.txt; done
+ 1253  cd a2/CUSTOMERS/
+ 1254  for i in $(cat ~/a2/100cid.txt); do grep "$i" ~/a2/customer_id_helpfulness_review.txt | cut -f 2,3 > ~/a2/CUSTOMER/$i.txt; done
+ 1255  for i in $(cat ~/a2/100cid.txt); do touch $i.txt; do grep "$i" ~/a2/customer_id_helpfulness_review.txt | cut -f 2,3 > ~/a2/CUSTOMER/$i.txt; done
+ 1256  for i in  `cat ~/a2/100cid.txt`; do touch $i.txt; do grep "$i" ~/a2/customer_id_helpfulness_review.txt | cut -f 2,3 > ~/a2/CUSTOMER/$i.txt; done
+ 1257  for i in  `cat ~/a2/100cid.txt`; do grep "$i" ~/a2/customer_id_helpfulness_review.txt | cut -f 2,3 > ~/a2/CUSTOMERS/$i.txt; done
+ 1258  ls
+ 1259  cat 52070241.txt
+ 1260  for i in  $(cat ~/a2/100cid.txt); do grep "$i" ~/a2/customer_id_helpfulness_review.txt | cut -f 2,3 > ~/a2/CUSTOMERS/$i.txt; done
+ 1261  cat 52070241.txt
+ 1262  for i in $(cat ~/a2/100cid.txt); do grep "$i" ~/a2/customer_id_helpfulness_review.txt | cut -f 2,3 > ~/a2/CUSTOMERS/$i.txt; done
+ 1263  cat 52070241.txt
+ 1264  cd ..
+ 1265  ls
+ 1266  rm 49693975.txt  51209967.txt  51706075.txt  52173832.txt  52494925.txt  52640843.txt  52868812.txt  53041222.txt  53078177.txt  53093476.txt 50122160.txt  51324308.txt  51744771.txt  52254603.txt  52506725.txt  52653706.txt  52872563.txt  53041254.txt  53083067.txt  53094545.txt 50732546.txt  51388692.txt  51925715.txt  52432257.txt  52543421.txt  52712162.txt  52894384.txt  53053358.txt  53085673.txt  53095241.txt 33993847.txt  50919803.txt  51403161.txt  52008531.txt  52447932.txt  52549534.txt  52721795.txt  52906860.txt  53053892.txt  53087372.txt  53096008.txt 45041039.txt  51126995.txt  51627410.txt  52070241.txt  52480140.txt  52558609.txt  52768337.txt  52912922.txt  53058003.txt  53091579.txt  53096149.txt 48656978.txt  51204643.txt  51670735.txt  52106113.txt  52489871.txt  52574579.txt  52820994.txt  52921971.txt  53077677.txt  53092570.txt
+ 1267  ls
+ 1268  wc customer_id_helpfulness_review.txt
+ 1269  grep 51670735 ~/a2/customer_id_helpfulness_review.txt 
+ 1270  grep 51388692 ~/a2/customer_id_helpfulness_review.txt 
+ 1271  grep 51388692 ~/a2/customer_id_helpfulness_review.txt >123.txt
+ 1272  wc 123.txt
+ 1273  grep 51388692 ~/a2/customer_id_helpfulness_review.txt |cut -f 2,3
+ 1274  man cut
+ 1275  cut -f 2,3 123.txt 
+ 1276  cat -f 2,3 123.txt 
+ 1277  grep 52420369 ~/a2/customer_id_helpfulness_review.txt |cut -f 2,3
+ 1278  123.txt|cut -f 2,3
+ 1279  ls
+ 1280  cat 123.txt|cut -f 2,3
+ 1281  grep 52420369 ~/a2/customer_id_helpfulness_review.txt |cut -f 2,3> 123.txt
+ 1282  cat 123.txt|cut -f 2,3
+ 1283  cat 123.txt|cut -f2,3
+ 1284  cat 123.txt|cut -f2
+ 1285  cut -f 2,3 123.txt 
+ 1286  cut -f2,3 123.txt 
+ 1287  cut -f2 123.txt 
+ 1288  cut  -f1,2 123.txt 
+ 1289  cut-f1,2 123.txt 
+ 1290  cut -f1,2 123.txt 
+ 1291  cut -f1-2 123.txt 
+ 1292  history
+ 1293  clear
+ 1294  awk -F" " '{print $2,$3}' 123.txt 
+ 1295  for i in $(cat ~/a2/100cid.txt); do grep "$i" ~/a2/customer_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/CUSTOMERS/$i.txt; done
+ 1296  cd CUSTOMERS/
+ 1297  cat 52428369
+ 1298  cat 52428369.txt
+ 1299  ls
+ 1300  cat 52106113.txt
+ 1301  cd..
+ 1302  cd ..
+ 1303  head -n 101 ~/result_p.txt > 101prod.txt 
+ 1304  tail -n 100 101prod.txt > 100prod.txt 
+ 1305  awk -F" " '{print $2}' 100prod.txt > 100pid
+ 1306  awk -F"\t" '{print $4,$8,$9}' ~/amazon_reviews_us_Books_v1_02.tsv > product_id_helpfulness_review.txt
+ 1307  mkdir PRODUCTS
+ 1308  cd PRODUCTS/
+ 1309  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/a2/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1310  cd ..
+ 1311  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/a2/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1312  cd PRODUCTS/
+ 1313  ls
+ 1314  cd ..
+ 1315  ls
+ 1316  awk -F" " '{print $2}' 100prod.txt > 100pid.txt
+ 1317  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/a2/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1318  cd PRODUCTS/
+ 1319  ls
+ 1320  cd ..
+ 1321  head 100pid.txt
+ 1322  rm 100pid
+ 1323  wc 100pid.txt 
+ 1324  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/a2/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1325  ls
+ 1326  cd PRODUCTS/
+ 1327  ls
+ 1328  cat 8432039799.txt
+ 1329  for i in $(cat ~/a2/100pid.txt); do  touch PRODUCTS/$i.txt; done
+ 1330  for i in `cat ~/a2/100pid.txt `; do touch $i.txt; grep -e ~/a2/100pid.txt ~/a2/product_id_helpfulness_review.txt > PRODUCTS/$i.txt; done
+ 1331  for i in `cat ~/a2/100pid.txt `; do touch $i.txt; grep -e ~/a2/100pid.txt ~/a2/product_id_helpfulness_review.txt > $i.txt; done
+ 1332  ls
+ 1333  for i in `cat ~/a2/100pid.txt `; do touch $i.txt;done
+ 1334  ls
+ 1335  head 100pid.txt
+ 1336  cd ..
+ 1337  head 100pid.txt
+ 1338  cd ..
+ 1339  ls
+ 1340  head product_id.txt
+ 1341  tail -n 100 product_id.txt > a2/100pid.txt
+ 1342  cd a2
+ 1343  head 100pid
+ 1344  cd ..
+ 1345  cat product_id.txt| uniq | head -n 100 > a2/100pid.txt
+ 1346  wc a2/100pid.txt
+ 1347  nano a2/100pid.txt
+ 1348  cat product_id.txt| uniq | tail -n 100 > a2/100pid.txt
+ 1349  cd a2
+ 1350  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/a2/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1351  cd PRODUCTS/
+ 1352  LS
+ 1353  ls
+ 1354  0679408754.txt
+ 1355  cat 0679408754.txt 
+ 1356  cd ..
+ 1357  man l
+ 1358  manls
+ 1359  man ls
+ 1360  ls -l
+ 1361  ls -latr
+ 1362  vi ~/.bashrc
+ 1363  ls -CF
+ 1364  l
+ 1365  man ls
+ 1366  ls it
+ 1367  ls -lt
+ 1368  ls -lt -latr
+ 1369  ls -latr -lt
+ 1370  ls -lat
+ 1371  vi ~/.bashrc
+ 1372  w
+ 1373  .~/.bashrc
+ 1374  source ~/.bashrc
+ 1375  l
+ 1376  w
+ 1377  alias ll="ls -la"
+ 1378  ll
+ 1379  alias le="ls -la"
+ 1380  le
+ 1381  vi ~/.bashrc
+ 1382  cd a2
+ 1383  cd CUSTOMERS/
+ 1384  w
+ 1385  l
+ 1386  cd ..
+ 1387  cd PRODUCTS/
+ 1388  w
+ 1389  l
+ 1390  ls
+ 1391  cd ~
+ 1392  sudo apt install datamash
+ 1393  echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
+ 1394  brew install datamash
+ 1395  wget http://ftp.gnu.org/gnu/datamash/datamash-1.3.tar.gz
+ 1396  tar -xzf datamash-1.3.tar.gz
+ 1397  cd datamash-1.3
+ 1398  ./configure
+ 1399  make
+ 1400  make check
+ 1401  sudo make install
+ 1402  cd ..
+ 1403  ls
+ 1404  sudo make install
+ 1405  l
+ 1406  ls l
+ 1407  ls -l
+ 1408  cd ~/datamash-1.3
+ 1409  ./datamash  -W ppearson 1:2 < ../files/c.txt 
+ 1410  cd ~/datamash-1.3./datamash  -W ppearson 1:2 < ../files/c.txt 0.999999998506 
+ 1411  ls
+ 1412  cd datamash
+ 1413  -W ppearson 1:2 < ../files/c.txt 0.999999998506 
+ 1414  cd ~
+ 1415  wget http://ftp.gnu.org/gnu/datamash/datamash-1.3.tar.gz
+ 1416  tar -xzf datamash-1.3.tar.gz
+ 1417  cd datamash-1.3
+ 1418  ./configure
+ 1419  cd ~/datamash-1.3
+ 1420  ./datamash  -W ppearson 1:2 < ../files/c.txt (input is a file with two columns of numbers, tab-separated or space-separated)
+ 1421  0.999999998506
+ 1422  cd ..
+ 1423  ./datamash  -W ppearson 1:2 < ../files/c.txt
+ 1424  touch c.txt
+ 1425  vi c.txt
+ 1426  for I in {1..1000} ; do echo “$I $I” ; done >> c.txt
+ 1427  head c.txt
+ 1428  for I in {1..1000} ; do echo $I $I ; done >> c.txt
+ 1429  for I in {1..1000} ; do echo $I $I ; done > c.txt
+ 1430  head c.txt
+ 1431  ./datamash  -W ppearson 1:2 < c.txt
+ 1432  cd datamash-1.3/
+ 1433  ./datamash  -W ppearson 1:2 < ../c.txt
+ 1434  for i in ~/a2/CUSTOMERS; do ./datamash  -W ppearson 1:2 < i >> ../3.txt; ;done
+ 1435  for i in ~/a2/CUSTOMERS; do ./datamash  -W ppearson 1:2 < i >> ../3.txt ;done
+ 1436  for i in ~/a2/CUSTOMERS; do ./datamash  -W ppearson 1:2 < i.txt >> ../3.txt ;done
+ 1437  for i in ~/a2/100cid.txt; do ./datamash  -W ppearson 1:2 < i.txt >> ../3.txt ;done
+ 1438  for i in $(cat ~/a2/100cid.txt); do ./datamash  -W ppearson 1:2 < i.txt >> ../3.txt ;done
+ 1439  for i in $(cat ~/a2/100cid.txt); do ./datamash  -W ppearson 1:2 < ~/a2/CUSTOMERS/i.txt >> ../3.txt ;done
+ 1440  ls
+ 1441  for i in $(cat ~/a2/100cid.txt); do ./datamash  -W ppearson 1:2 < ~/a2/CUSTOMERS/i.txt >> 3.txt ;done
+ 1442  ls
+ 1443  for /r %i in ~/a2/CUSTOMERS/ do echo %i;done
+ 1444  for /r %%i in ~/a2/CUSTOMERS/ do echo %%i;done
+ 1445  cd ..
+ 1446  cd a2/CUSTOMERS/
+ 1447  for FILE in *; do echo $FILE; done
+ 1448  cd ..
+ 1449  ls
+ 1450  cd datamash-1.3/
+ 1451  for FILE in ../a2/CUSTOMERS/; do echo $FILE; done
+ 1452  for FILE in a2/CUSTOMERS/; do echo $FILE; done
+ 1453  for FILE in */a2/CUSTOMERS/; do echo $FILE; done
+ 1454  for FILE in /a2/CUSTOMERS/*.txt; do echo $FILE; done
+ 1455  for FILE in a2/CUSTOMERS/*.txt; do echo $FILE; done
+ 1456  for FILE in a2/CUSTOMERS/*; do cat "$FILE"; don
+ 1457  for FILE in ~/a2/CUSTOMERS/*; do c
+ 1458  clear
+ 1459  for FILE in a2/CUSTOMERS/*; do ./datamash  -W ppearson 1:2 < "$FILE" ; done; > 123.txt
+ 1460  for FILE in ~/a2/CUSTOMERS/*; do ./datamash  -W ppearson 1:2 < "$FILE" ; done; > 123.txt
+ 1461  ls
+ 1462  head 123.txt 
+ 1463  for FILE in a2/CUSTOMERS/*.txt; do echo $FILE; done
+ 1464  history
+ 1465  for FILE in a2/CUSTOMERS/*; do echo $FILE; done
+ 1466  for FILE in ～a2/CUSTOMERS/*; do echo $FILE; done
+ 1467  cd~
+ 1468  cd ~
+ 1469  cd a2/CUSTOMERS/
+ 1470  ls -d $PWD/* > filename
+ 1471  head filename
+ 1472  cd ~
+ 1473  cd datamash
+ 1474  cd datamash-1.3/
+ 1475  for FILE in ~/a2/CUSTOMERS/filename; do ./datamash  -W ppearson 1:2 < “$FILE” ; done; > 123.txt
+ 1476  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < “$FILE” ; done; > 123.txt
+ 1477  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < cat “$FILE” ; done; > 123.txt
+ 1478  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < `cat “$FILE”` ; done; > 123.txt
+ 1479  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < $(cat “$FILE”) ; done; > 123.txt
+ 1480  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < $(cat $FILE) ; done; > 123.txt
+ 1481  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < $(cat /home/lis/a2/CUSTOMERS/53094545.txt) ; done; > 123.txt
+ 1482  at ~/home/lis/a2/CUSTOMERS/33993847.txt
+ 1483  cat ~/home/lis/a2/CUSTOMERS/33993847.txt
+ 1484  cat ~/home/lis/a2/CUSTOMERS/50919803.txt
+ 1485  cd ..
+ 1486  pwd
+ 1487  cd datamash-1.3/
+ 1488  pwd
+ 1489  cp a2/C
+ 1490  cp ~/a2/CUSTOMERS/ /home/lis/datamash-1.3
+ 1491  cp -r ~/a2/CUSTOMERS/ /home/lis/datamash-1.3
+ 1492  ls
+ 1493  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < $(cat /home/lis/a2/CUSTOMERS/53094545.txt) ; done; > 123.txt
+ 1494  for FILE in CUSTOMERS; do ./datamash  -W ppearson 1:2 < FILF ; done; > 123.txt
+ 1495  for FILE in CUSTOMERS; do ./datamash  -W ppearson 1:2 < $FILF ; done; > 123.txt
+ 1496  for FILE in CUSTOMERS; do ./datamash  -W ppearson 1:2 < "$FILF' ; done; > 123.txt
+ 1497  for FILE in CUSTOMERS; do ./datamash  -W ppearson 1:2 < "$FILF" ; done; > 123.txt
+ 1498  history
+ 1499  for FILE in a2/CUSTOMERS/*.txt; do echo $FILE; done > 123.txt
+ 1500  head 123.txt
+ 1501  cd ~/home
+ 1502  cd ~
+ 1503  ls -a
+ 1504  pwd
+ 1505  cd datamash-1.3/
+ 1506  ls
+ 1507  cd ..
+ 1508  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < $(cat $FILE) ; done; > 123.txt
+ 1509  for FILE in `cat ~/a2/CUSTOMERS/filename`;  do $(cat /home/lis/a2/CUSTOMERS/53094545.txt) | ./datamash  -W ppearson 1:2 done; > 123.txt
+ 1510  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt | ./datamash  -W ppearson 1:2;  done; > 123.txt
+ 1511  ls -a
+ 1512  cd datamash-1.3/
+ 1513  ls -a
+ 1514  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt | ./datamash  -W ppearson 1:2;  done; > 123.txt
+ 1515  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt  done; > 123.txt
+ 1516  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt done; > 123.txt
+ 1517  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt | ; done; > 123.txt
+ 1518  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt | ./datamash -W ppearson 1:2;  done; > 123.txt
+ 1519  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt > ./datamash -W ppearson 1:2;  done; > 123.txt
+ 1520  for FILE in $(cat ~/a2/CUSTOMERS/filename);  cat $FILE | ./datamash -W ppearson 1:2;  done; > 123.txt
+ 1521  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat $FILE | ./datamash -W ppearson 1:2;  done; > 123.txt
+ 1522  nano 123.txt
+ 1523  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do ./datamash -W ppearson 1:2 | cat $FILE;  done; > 123.txt
+ 1524  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do ./datamash -W ppearson 1:2 < cat $FILE;  done; > 123.txt
+ 1525  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do ./datamash -W ppearson 1:2 < cat "$FILE";  done; > 123.txt
+ 1526  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do ./datamash -W ppearson 1:2 < echo "$FILE";  done; > 123.txt
+ 1527  for FILE in $(cat ~/a2/CUSTOMERS/filename);  echo "$FILE";  done;
+ 1528  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo "$FILE" ;  done;
+ 1529  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat "$FILE";  done; > 123.txt
+ 1530  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat "$FILE" > ./datamash -W ppearson 1:2;  done; > 123.txt
+ 1531  history
+ 1532  ./datamash  -W ppearson 1:2 < ../c.txt
+ 1533  ./datamash  -W ppearson 1:2 < /c.txt
+ 1534  ./datamash  -W ppearson 1:2 < ./c.txt
+ 1535  ./datamash  -W ppearson 1:2 < ../c.txt
+ 1536  head c.txt
+ 1537  ls
+ 1538  cd ..
+ 1539  ls
+ 1540  cd datamash-1.3/
+ 1541  ls
+ 1542  ./datamash  -W ppearson 1:2 < ../c.txt
+ 1543  ~/datamash-1.3$ ./datamash  -W ppearson 1:2 < ../c.txt
+ 1544  ~/datamash-1.3$ ./datamash  -W ppearson 1:2 < ../c.txt.
+ 1545  ./datamash 
+ 1546  man ./datamash
+ 1547  ls -a
+ 1548  cd ~
+ 1549  ls
+ 1550  wget http://ftp.gnu.org/gnu/datamash/datamash-1.3.tar.gz
+ 1551  tar -xzf datamash-1.3.tar.gz
+ 1552  cd datamash-1.3
+ 1553  ./configure
+ 1554  make
+ 1555  make check
+ 1556  Then run as follows: ./datamash  -W ppearson 1:2 < ../files/c.txt
+ 1557  Then run as follows: ./datamash  -W ppearson 1:2 < ../c.txt
+ 1558  ./datamash  -W ppearson 1:2 < ../c.txt
+ 1559  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do ./datamash -W ppearson 1:2 < $FILE;  done; > 123.txt
+ 1560  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do ./datamash -W ppearson 1:2 < $FILE > 123.txt;  done;
+ 1561  cat 123.txt
+ 1562  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; ./datamash -W ppearson 1:2 < $FILE;  done;
+ 1563  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; ./datamash -W ppearson 1:2 < $FILE;  done; > 123.txt
+ 1564  cat 123.txt
+ 1565  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; ./datamash -W ppearson 1:2 < $FILE;  done; >> 123.txt
+ 1566  cat 123.txt 
+ 1567  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; ./datamash -W ppearson 1:2 < $FILE > 123.txt; done;
+ 1568  cat 123.txt
+ 1569  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; ./datamash -W ppearson 1:2 < $FILE >> 123.txt; done;
+ 1570  cat 123.txt
+ 1571  wc 123.txt 
+ 1572  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; ./datamash -W ppearson 1:2 < $FILE >> 123.txt; done;
+ 1573  cat 123.txt
+ 1574  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; done
+ 1575  man cut
+ 1576  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE > cut -d "/" ; done
+ 1577  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE | cut -d "/" ; done
+ 1578  awk -F"\t" '{print $2}' ~/amazon_reviews_us_Books_v1_02.tsv > customersid.txt
+ 1579  cat customersid.txt | uniq > unique_cust.txt
+ 1580  wc customersid.txt 
+ 1581  wc unique_cust.txt 
+ 1582  awk -F"\t" '{print $6}' ~/amazon_reviews_us_Books_v1_02.tsv > product_titles.txt
+ 1583  cat product_titles.txt | uniq > unique_product_titles.txt
+ 1584  wc unique_product_titles.txt 
+ 1585  mkdir a2
+ 1586  cd a2
+ 1587  cat ~/unique_cust.txt | tail -n 100 > 100cid.txt
+ 1588  wc 100cid.txt 
+ 1589  awk -F"\t" '{print $2,$8,$9}' ~/amazon_reviews_us_Books_v1_02.tsv > 
+ 1590  awk -F"\t" '{print $2,$8,$9}' ~/amazon_reviews_us_Books_v1_02.tsv > customer_id_helpfulness_review.txt
+ 1591  mkdir CUSTOMERS
+ 1592  cd CUSTOMERS
+ 1593  for i in $(cat ~/a2/100cid.txt); do grep "$i" ~/a2/customer_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/CUSTOMERS/$i.txt; done
+ 1594  ls
+ 1595  head 53095838.txt 
+ 1596  cat product_id.txt| uniq | tail -n 100 > a2/100pid.txt
+ 1597  awk -F"\t" '{print $4,$8,$9}' ~/amazon_reviews_us_Books_v1_02.tsv > product_id_helpfulness_review.txt
+ 1598  cd ..
+ 1599  cat product_id.txt| uniq | tail -n 100 > 100pid.txt
+ 1600  cd ..
+ 1601  cat product_id.txt| uniq | tail -n 100 > 100pid.txt
+ 1602  awk -F"\t" '{print $4,$8,$9}' ~/amazon_reviews_us_Books_v1_02.tsv > product_id_helpfulness_review.txt
+ 1603  mkdir PRODUCTS
+ 1604  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/a2/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1605  alias l='ls -lat'
+ 1606  alias w='ls -la | wc'
+ 1607  vi ~/.bashrc
+ 1608  source ~/.bashrc
+ 1609  cd ~/a2/CUSTOMERS/
+ 1610  l
+ 1611  w
+ 1612  cd ..
+ 1613  cd PRODUCTS
+ 1614  ls
+ 1615  cd ..
+ 1616  ls
+ 1617  mv -R PRODUCTS a2
+ 1618  mv -r PRODUCTS a2
+ 1619  cp PRODUCTS a2
+ 1620  cp -r PRODUCTS a2
+ 1621  cd a2
+ 1622  ls
+ 1623  cd PRODUCTS/
+ 1624  w
+ 1625  l
+ 1626  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/a2/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1627  l
+ 1628  cd ..
+ 1629  head 100pid.txt 
+ 1630  cd ..
+ 1631  cat product_id.txt| uniq | tail -n 100 > 100pid.txt
+ 1632  head 100pid.txt 
+ 1633  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/a2/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1634  cd PRODUCTS/
+ 1635  w
+ 1636  cd ..
+ 1637  cd a2/PRODUCTS/
+ 1638  w
+ 1639  cd ..
+ 1640  rm -r PRODUCTS
+ 1641  wc 100pid.txt 
+ 1642  head ~/a2/product_id_helpfulness_review.txt
+ 1643  head a2/product_id_helpfulness_review.txt
+ 1644  ls
+ 1645  head product_id_helpfulness_review.txt
+ 1646  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1647  cd a2/PRODUCTS/
+ 1648  w
+ 1649  l
+ 1650  cd ..
+ 1651  ls
+ 1652  cd a2
+ 1653  ls
+ 1654  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1655  cd PRODUCTS/
+ 1656  w
+ 1657  cd ..
+ 1658  head 100pid.txt 
+ 1659  ls
+ 1660  cd ..
+ 1661  cat product_id.txt| uniq | tail -n 100 > a2/100pid.txt
+ 1662  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1663  cd a2/PRODUCTS/
+ 1664  w
+ 1665  less a2.txt
+ 1666  cd ~
+ 1667  less a2.txt
+ 1668  tr -cd '\11\12\15\40-\176' < a2.txt > a2.txt.clean
+ 1669  vi a2.txt.clean
+ 1670  tr -cd '\11\12\15\40-\176' < a2.txt.clean > a2.txt.clean2
+ 1671  vi a2.txt.clean2
+ 1672  cd a2
+ 1673  awk -F"\t" '{print $2}' ~/amazon_reviews_us_Books_v1_02.tsv > customersid.txt
+ 1674  cat customersid.txt | uniq > unique_cust.txt
+ 1675  wc unique_cust.txt 
+ 1676  awk -F"\t" '{print $6}' ~/amazon_reviews_us_Books_v1_02.tsv > product_titles.txt
+ 1677  cat product_titles.txt | uniq > unique_product_titles.txt
+ 1678  wc unique_product_titles.txt 
+ 1679  cat ~/unique_cust.txt | tail -n 100 > 100cid.txt
+ 1680  mkdir a2
+ 1681  wc 100cid.txt 
+ 1682  cd a2
+ 1683  awk -F"\t" '{print $2,$8,$9}' ~/amazon_reviews_us_Books_v1_02.tsv > customer_id_helpfulness_review.txt
+ 1684  mkdir CUSTOMERS
+ 1685  cd CUSTOMERS
+ 1686  for i in $(cat ~/a2/100cid.txt); do grep "$i" ~/a2/customer_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/CUSTOMERS/$i.txt; done
+ 1687  for i in $(cat ~/100cid.txt); do grep "$i" ~/a2/customer_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/CUSTOMERS/$i.txt; done
+ 1688  w
+ 1689  cd ..
+ 1690  cat product_id.txt| uniq | tail -n 100 > a2/100pid.txt
+ 1691  cd a2
+ 1692  awk -F"\t" '{print $4,$8,$9}' ~/amazon_reviews_us_Books_v1_02.tsv > product_id_helpfulness_review.txt
+ 1693  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/a2/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1694  mkdir PRODUCTS
+ 1695  for i in $(cat ~/a2/100pid.txt); do grep "$i" ~/a2/product_id_helpfulness_review.txt | awk -F" " '{print $2,$3}' > ~/a2/PRODUCTS/$i.txt; done
+ 1696  cd PRODUCTS
+ 1697  w
+ 1698  cd ~
+ 1699  alias l='ls -lat'
+ 1700  alias w='ls -la | wc'
+ 1701  vi ~/.bashrc
+ 1702  source ~/.bashrc
+ 1703  cd ~/datamash-1.3
+ 1704  ./datamash  -W ppearson 1:2 < ../files/c.txt (input is a file with two columns of numbers, tab-separated or space-separated)
+ 1705  0.999999998506
+ 1706  cd ..
+ 1707  ./datamash  -W ppearson 1:2 < ../files/c.txt
+ 1708  touch c.txt
+ 1709  vi c.txt
+ 1710  for I in {1..1000} ; do echo “$I $I” ; done >> c.txt
+ 1711  head c.txt
+ 1712  for I in {1..1000} ; do echo $I $I ; done >> c.txt
+ 1713  for I in {1..1000} ; do echo $I $I ; done > c.txt
+ 1714  head c.txt
+ 1715  ./datamash  -W ppearson 1:2 < c.txt
+ 1716  cd datamash-1.3/
+ 1717  ./datamash  -W ppearson 1:2 < ../c.txt
+ 1718  for i in ~/a2/CUSTOMERS; do ./datamash  -W ppearson 1:2 < i >> ../3.txt; ;done
+ 1719  for i in ~/a2/CUSTOMERS; do ./datamash  -W ppearson 1:2 < i >> ../3.txt ;done
+ 1720  for i in ~/a2/CUSTOMERS; do ./datamash  -W ppearson 1:2 < i.txt >> ../3.txt ;done
+ 1721  for i in ~/a2/100cid.txt; do ./datamash  -W ppearson 1:2 < i.txt >> ../3.txt ;done
+ 1722  for i in $(cat ~/a2/100cid.txt); do ./datamash  -W ppearson 1:2 < i.txt >> ../3.txt ;done
+ 1723  for i in $(cat ~/a2/100cid.txt); do ./datamash  -W ppearson 1:2 < ~/a2/CUSTOMERS/i.txt >> ../3.txt ;done
+ 1724  ls
+ 1725  for i in $(cat ~/a2/100cid.txt); do ./datamash  -W ppearson 1:2 < ~/a2/CUSTOMERS/i.txt >> 3.txt ;done
+ 1726  ls
+ 1727  for /r %i in ~/a2/CUSTOMERS/ do echo %i;done
+ 1728  for /r %%i in ~/a2/CUSTOMERS/ do echo %%i;done
+ 1729  cd ..
+ 1730  cd a2/CUSTOMERS/
+ 1731  for FILE in *; do echo $FILE; done
+ 1732  cd ..
+ 1733  ls
+ 1734  cd datamash-1.3/
+ 1735  for FILE in ../a2/CUSTOMERS/; do echo $FILE; done
+ 1736  for FILE in a2/CUSTOMERS/; do echo $FILE; done
+ 1737  for FILE in */a2/CUSTOMERS/; do echo $FILE; done
+ 1738  for FILE in /a2/CUSTOMERS/*.txt; do echo $FILE; done
+ 1739  for FILE in a2/CUSTOMERS/*.txt; do echo $FILE; done
+ 1740  for FILE in a2/CUSTOMERS/*; do cat "$FILE"; don
+ 1741  for FILE in ~/a2/CUSTOMERS/*; do c
+ 1742  clear
+ 1743  for FILE in a2/CUSTOMERS/*; do ./datamash  -W ppearson 1:2 < "$FILE" ; done; > 123.txt
+ 1744  for FILE in ~/a2/CUSTOMERS/*; do ./datamash  -W ppearson 1:2 < "$FILE" ; done; > 123.txt
+ 1745  ls
+ 1746  head 123.txt 
+ 1747  for FILE in a2/CUSTOMERS/*.txt; do echo $FILE; done
+ 1748  history
+ 1749  for FILE in a2/CUSTOMERS/*; do echo $FILE; done
+ 1750  for FILE in ～a2/CUSTOMERS/*; do echo $FILE; done
+ 1751  cd~
+ 1752  cd ~
+ 1753  cd a2/CUSTOMERS/
+ 1754  ls -d $PWD/* > filename
+ 1755  head filename
+ 1756  cd ~
+ 1757  cd datamash
+ 1758  cd datamash-1.3/
+ 1759  for FILE in ~/a2/CUSTOMERS/filename; do ./datamash  -W ppearson 1:2 < “$FILE” ; done; > 123.txt
+ 1760  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < “$FILE” ; done; > 123.txt
+ 1761  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < cat “$FILE” ; done; > 123.txt
+ 1762  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < `cat “$FILE”` ; done; > 123.txt
+ 1763  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < $(cat “$FILE”) ; done; > 123.txt
+ 1764  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < $(cat $FILE) ; done; > 123.txt
+ 1765  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < $(cat /home/lis/a2/CUSTOMERS/53094545.txt) ; done; > 123.txt
+ 1766  at ~/home/lis/a2/CUSTOMERS/33993847.txt
+ 1767  cat ~/home/lis/a2/CUSTOMERS/33993847.txt
+ 1768  cat ~/home/lis/a2/CUSTOMERS/50919803.txt
+ 1769  cd ..
+ 1770  pwd
+ 1771  cd datamash-1.3/
+ 1772  pwd
+ 1773  cp a2/C
+ 1774  cp ~/a2/CUSTOMERS/ /home/lis/datamash-1.3
+ 1775  cp -r ~/a2/CUSTOMERS/ /home/lis/datamash-1.3
+ 1776  ls
+ 1777  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < $(cat /home/lis/a2/CUSTOMERS/53094545.txt) ; done; > 123.txt
+ 1778  for FILE in CUSTOMERS; do ./datamash  -W ppearson 1:2 < FILF ; done; > 123.txt
+ 1779  for FILE in CUSTOMERS; do ./datamash  -W ppearson 1:2 < $FILF ; done; > 123.txt
+ 1780  for FILE in CUSTOMERS; do ./datamash  -W ppearson 1:2 < "$FILF' ; done; > 123.txt
+ 1781  for FILE in CUSTOMERS; do ./datamash  -W ppearson 1:2 < "$FILF" ; done; > 123.txt
+ 1782  history
+ 1783  for FILE in a2/CUSTOMERS/*.txt; do echo $FILE; done > 123.txt
+ 1784  head 123.txt
+ 1785  cd ~/home
+ 1786  cd ~
+ 1787  ls -a
+ 1788  pwd
+ 1789  cd datamash-1.3/
+ 1790  ls
+ 1791  cd ..
+ 1792  for FILE in `cat ~/a2/CUSTOMERS/filename`; do ./datamash  -W ppearson 1:2 < $(cat $FILE) ; done; > 123.txt
+ 1793  for FILE in `cat ~/a2/CUSTOMERS/filename`;  do $(cat /home/lis/a2/CUSTOMERS/53094545.txt) | ./datamash  -W ppearson 1:2 done; > 123.txt
+ 1794  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt | ./datamash  -W ppearson 1:2;  done; > 123.txt
+ 1795  ls -a
+ 1796  cd datamash-1.3/
+ 1797  ls -a
+ 1798  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt | ./datamash  -W ppearson 1:2;  done; > 123.txt
+ 1799  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt  done; > 123.txt
+ 1800  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt done; > 123.txt
+ 1801  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt | ; done; > 123.txt
+ 1802  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt | ./datamash -W ppearson 1:2;  done; > 123.txt
+ 1803  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat /home/lis/a2/CUSTOMERS/53094545.txt > ./datamash -W ppearson 1:2;  done; > 123.txt
+ 1804  for FILE in $(cat ~/a2/CUSTOMERS/filename);  cat $FILE | ./datamash -W ppearson 1:2;  done; > 123.txt
+ 1805  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat $FILE | ./datamash -W ppearson 1:2;  done; > 123.txt
+ 1806  nano 123.txt
+ 1807  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do ./datamash -W ppearson 1:2 | cat $FILE;  done; > 123.txt
+ 1808  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do ./datamash -W ppearson 1:2 < cat $FILE;  done; > 123.txt
+ 1809  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do ./datamash -W ppearson 1:2 < cat "$FILE";  done; > 123.txt
+ 1810  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do ./datamash -W ppearson 1:2 < echo "$FILE";  done; > 123.txt
+ 1811  for FILE in $(cat ~/a2/CUSTOMERS/filename);  echo "$FILE";  done;
+ 1812  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo "$FILE" ;  done;
+ 1813  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat "$FILE";  done; > 123.txt
+ 1814  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do cat "$FILE" > ./datamash -W ppearson 1:2;  done; > 123.txt
+ 1815  history
+ 1816  ./datamash  -W ppearson 1:2 < ../c.txt
+ 1817  ./datamash  -W ppearson 1:2 < /c.txt
+ 1818  ./datamash  -W ppearson 1:2 < ./c.txt
+ 1819  ./datamash  -W ppearson 1:2 < ../c.txt
+ 1820  head c.txt
+ 1821  ls
+ 1822  cd ..
+ 1823  ls
+ 1824  cd datamash-1.3/
+ 1825  ls
+ 1826  ./datamash  -W ppearson 1:2 < ../c.txt
+ 1827  ~/datamash-1.3$ ./datamash  -W ppearson 1:2 < ../c.txt
+ 1828  ~/datamash-1.3$ ./datamash  -W ppearson 1:2 < ../c.txt.
+ 1829  ./datamash 
+ 1830  man ./datamash
+ 1831  ls -a
+ 1832  cd ~
+ 1833  ls
+ 1834  wget http://ftp.gnu.org/gnu/datamash/datamash-1.3.tar.gz
+ 1835  tar -xzf datamash-1.3.tar.gz
+ 1836  cd datamash-1.3
+ 1837  ./configure
+ 1838  make
+ 1839  make check
+ 1840  Then run as follows: ./datamash  -W ppearson 1:2 < ../files/c.txt
+ 1841  Then run as follows: ./datamash  -W ppearson 1:2 < ../c.txt
+ 1842  ./datamash  -W ppearson 1:2 < ../c.txt
+ 1843  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do ./datamash -W ppearson 1:2 < $FILE;  done; > 123.txt
+ 1844  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do ./datamash -W ppearson 1:2 < $FILE > 123.txt;  done;
+ 1845  cat 123.txt
+ 1846  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; ./datamash -W ppearson 1:2 < $FILE;  done;
+ 1847  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; ./datamash -W ppearson 1:2 < $FILE;  done; > 123.txt
+ 1848  cat 123.txt
+ 1849  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; ./datamash -W ppearson 1:2 < $FILE;  done; >> 123.txt
+ 1850  cat 123.txt 
+ 1851  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; ./datamash -W ppearson 1:2 < $FILE > 123.txt; done;
+ 1852  cat 123.txt
+ 1853  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; ./datamash -W ppearson 1:2 < $FILE >> 123.txt; done;
+ 1854  cat 123.txt
+ 1855  wc 123.txt 
+ 1856  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; ./datamash -W ppearson 1:2 < $FILE >> 123.txt; done;
+ 1857  cat 123.txt
+ 1858  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE; done
+ 1859  man cut
+ 1860  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE > cut -d "/" ; done
+ 1861  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE | cut -d "/" ; done
+ 1862  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $FILE | awk -F"/" '{print $5} ; done
+ 1863  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $($FILE | awk -F "/" '{print $5}) ; done
+ 1864  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $($FILE | awk -F "/" '{print $5}'); done
+ 1865  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $("$FILE" | awk -F "/" '{print $5}'); done
+ 1866  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $(awk $FILE -F "/" '{print $5}'); done
+ 1867  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $(awk -F "/" '{print $5}' $FILE); done
+ 1868  for FILE in $(cat ~/a2/CUSTOMERS/filename);  do echo $(awk -F "/" $FILE); done
+ 1869  MAN AWK
+ 1870  man awk
+ 1871  for FILE in $(cat ~/a2/CUSTOMERS/filename); cut "$FILE" -d '/' -f 5 ; done
+ 1872  for FILE in $(cat ~/a2/CUSTOMERS/filename);do $(echo cut "$FILE" -d '/' -f 5) ; done
+ 1873  for FILE in $(cat ~/a2/CUSTOMERS/filename);do echo $(cut "$FILE" -d '/' -f 5) ; done
+ 1874  for FILE in $(cat ~/a2/CUSTOMERS/filename);do echo `cut "$FILE" -d '/' -f 5` ; done
+ 1875  for FILE in $(cat ~/a2/CUSTOMERS/filename);do echo $(cut "$FILE" -d '/' -f 5) ; done
+ 1876  CLEAR
+ 1877  clear
+ 1878  cd ..
+ 1879  ls
+ 1880  rm -r a2
+ 1881  ls
+ 1882  script a2.txt
+ 1883  tr -cd '\11\12\15\40-\176' < a2.txt > a2.txt.clean
+ 1884  tr -cd '\11\12\15\40-\176' < a2.txt.clean > a2.txt.clean2
+ 1885  vi a2.txt.clean2
+ 1886  cd a2
+ 1887  history > cmds.log
+ 1888  ls
+ 1889  vi a2.txt.clean2
+ 1890  cd ..
+ 1891  vi a2.txt.clean2
+ 1892  rm -r a2
+ 1893  script a2.txt
+ 1894  ls
+ 1895  perl -pe 's/\x1b\[[0-9;]*[mG]//g' a2.txt > a2.txt.clean
+ 1896  tr -cd '\11\12\15\40-\176' < a2.txt.clean > a2.txt.clean2
+ 1897  vi a2.txt.clean2
+ 1898  cd a2/CUSTOMERS/
+ 1899  w
+ 1900  cd ..
+ 1901  cd PRODUCTS/
+ 1902  w
+ 1903  ls
+ 1904  script a2.txt
+ 1905  vi a2.txt
+ 1906  history
+ 1907  perl -pe 's/\x1b\[[0-9;]*[mG]//g' a2.txt > a2.txt.clean
+ 1908  tr -cd '\11\12\15\40-\176' < a2.txt.clean > a2.txt.clean3
+ 1909  vi a2.txt.clean3
+ 1910  vi a2.txt.clean2
+ 1911  cd a2
+ 1912  git init
+ 1913  ls
+ 1914  cd ..
+ 1915  ls
+ 1916  mv a2.txt.clean2 a2
+ 1917  cd a2
+ 1918  ls
+ 1919  history > cmds.log
+ 1920  ls
+ 1921  add cmds.log a2.txt.clean2
+ 1922  git add cmds.log a2.txt.clean2
+ 1923  git commit -m "first commit"
+ 1924  git remote add origin https://github.com/Serena-Shiting/a2.git
+ 1925  git branch -M main
+ 1926  git push -u origin main
+ 1927  cd ws4
+ 1928  ls
+ 1929  head cmds.log
+ 1930  history > cmds.log
